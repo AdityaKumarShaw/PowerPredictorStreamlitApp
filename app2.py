@@ -189,7 +189,7 @@ if uploaded_file:
         st.subheader('Predicted Electricity Consumption')
         st.write(f'{prediction[0]:.2f} units')
 else:
-    elec = pd.read_csv(r'consumption with date,weather final CSV.csv')
+    elec = pd.read_csv('Consumption with date,weather final CSV.csv')
     elec=elec.set_index('DATE')
     # Display dataset
     st.subheader('Dataset Preview')
